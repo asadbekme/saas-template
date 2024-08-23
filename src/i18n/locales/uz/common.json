@@ -5,5 +5,8 @@
   "pricing": "Narxlar",
   "faq": "Savollar",
   "login": "Kirish",
-  "register": "Ro'yhatdan o'tish"
+  "register": "Ro'yhatdan o'tish",
+  "light": "Yorqin",
+  "dark": "Tungi",
+  "system": "Tizim"
 }

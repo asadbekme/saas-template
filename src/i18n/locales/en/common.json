@@ -5,5 +5,8 @@
   "pricing": "Pricing",
   "faq": "FAQ",
   "login": "Sign in",
-  "register": "Sign up"
+  "register": "Sign up",
+  "light": "Light",
+  "dark": "Dark",
+  "system": "System"
 }

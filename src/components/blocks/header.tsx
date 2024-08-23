@@ -2,19 +2,18 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { ChartNoAxesCombined, Menu } from "lucide-react";
 import { navLinks } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { styles } from "@/lib/styles";
 import { useTranslation } from "@/i18n/client";
 import { Button } from "../ui/button";
+import AppLink from "../ui/app-link/app-link";
 import { ModeToggle } from "../mode-toggle";
 import ChangeLangs from "../change-langs";
 import MobileMenu from "../mobile-menu";
 
 function Header() {
-  const { lng } = useParams();
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,13 +24,13 @@ function Header() {
     <header id="header">
       <div className="container py-3">
         <div className={cn(styles.flex, "gap-5")}>
-          <a
-            href={`/${lng}`}
+          <AppLink
+            href="/"
             className="flex items-center gap-1 md:gap-2 text-lg md:text-xl font-medium"
           >
             <ChartNoAxesCombined className="size-6 md:size-7" />
             SaaS Template
-          </a>
+          </AppLink>
 
           <nav className="hidden lg:block">
             <ul className={cn(styles.flex, "gap-6")}>
@@ -58,10 +57,10 @@ function Header() {
               <span className="sr-only">Mobile menu</span>
             </Button>
             <div className="hidden lg:flex items-center gap-5">
-              <Link href={`/${lng}/login`}>{t("login")}</Link>
-              <Link href={`/${lng}/register`}>
+              <AppLink href="/login">{t("login")}</AppLink>
+              <AppLink href="/register">
                 <Button>{t("register")}</Button>
-              </Link>
+              </AppLink>
             </div>
           </div>
 

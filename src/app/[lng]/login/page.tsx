@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import AppLink from "@/components/ui/app-link/app-link";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -9,7 +10,6 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -38,9 +38,9 @@ export default function LoginPage() {
           <Button className="w-full">Sign in</Button>
           <div className="text-center text-sm">
             Don't have an account?{" "}
-            <Link href="/register" className="underline">
+            <AppLink href="/register" className="underline">
               Sign up
-            </Link>
+            </AppLink>
           </div>
         </CardContent>
       </Card>

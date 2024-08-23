@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import AppLink from "@/components/ui/app-link/app-link";
 
 export default function RegisterPage() {
   return (
@@ -52,9 +51,9 @@ export default function RegisterPage() {
           </div>
           <div className="mt-4 text-center text-sm">
             Already have an account?{" "}
-            <Link href="/login" className="underline">
+            <AppLink href="/login" className="underline">
               Sign in
-            </Link>
+            </AppLink>
           </div>
         </CardContent>
       </Card>

@@ -15,7 +15,8 @@ import {
   initReactI18next,
   useTranslation as useTranslationOrg,
 } from "react-i18next";
-import { getOptions, languages } from "./settings";
+import { useCookies } from "react-cookie";
+import { getOptions, languages, cookieName } from "./settings";
 
 const runsOnServerSide = typeof window === "undefined";
 
@@ -44,6 +45,7 @@ export function useTranslation<
   ns?: Ns,
   options?: UseTranslationOptions<KPrefix>
 ): UseTranslationResponse<FallbackNs<Ns>, KPrefix> {
+  const [cookies, setCookie] = useCookies([cookieName]);
   const { lng } = useParams();
   const ret = useTranslationOrg(ns, options);
   const { i18n } = ret;
@@ -62,6 +64,11 @@ export function useTranslation<
       if (!lng || i18n.resolvedLanguage === lng) return;
       i18n.changeLanguage(lng as string);
     }, [lng, i18n]);
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(() => {
+      if (cookies.i18next === lng) return;
+      setCookie(cookieName, lng, { path: "/" });
+    }, [lng, cookies.i18next, setCookie]);
   }
   return ret;
 }

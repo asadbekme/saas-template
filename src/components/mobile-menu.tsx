@@ -1,4 +1,3 @@
-import { useParams } from "next/navigation";
 import Link from "next/link";
 import { ChartNoAxesCombined } from "lucide-react";
 import { Sheet, SheetContent, SheetTitle } from "./ui/sheet";
@@ -6,6 +5,7 @@ import { navLinks } from "@/lib/constants";
 import { styles } from "@/lib/styles";
 import { useTranslation } from "@/i18n/client";
 import { Button } from "./ui/button";
+import AppLink from "./ui/app-link/app-link";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -13,7 +13,6 @@ type MobileMenuProps = {
 };
 
 function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
-  const { lng } = useParams();
   const { t } = useTranslation();
 
   return (
@@ -37,10 +36,10 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             ))}
           </ul>
           <div className="flex items-center gap-5">
-            <Link href={`/${lng}/login`}>{t("login")}</Link>
-            <Link href={`/${lng}/register`}>
+            <AppLink href="/login">{t("login")}</AppLink>
+            <AppLink href="/register">
               <Button>{t("register")}</Button>
-            </Link>
+            </AppLink>
           </div>
         </div>
       </SheetContent>

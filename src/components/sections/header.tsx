@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <header id="header">
-      <div className="container py-3">
+      <div className="container py-5">
         <div className={cn(styles.flex, "gap-5")}>
           <AppLink
             href="/"

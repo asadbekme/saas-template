@@ -8,5 +8,10 @@
   "register": "Регистрация",
   "light": "Светлый",
   "dark": "Темный",
-  "system": "Системный"
+  "system": "Системный",
+  "followNextjs": "Подпишитесь на @Next.js в Twitter",
+  "homeTitle": "Прекрасный <1>шаблон SaaS</1> для создания и увеличения вашего бизнеса с помощью удобства.",
+  "homeDescription": "Бесплатный шаблон целевой страницы с открытым исходным кодом для вашего SaaS-бизнеса, созданный с использованием Next.js, TypeScript, Shadcn UI и Tailwind CSS.",
+  "getStarted": "Начать",
+  "buySaaSTemplate": "Купить шаблон Next.js SaaS Boilerplate"
 }

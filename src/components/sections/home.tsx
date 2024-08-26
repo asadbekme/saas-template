@@ -1,10 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight, Twitter } from "lucide-react";
 import { Trans } from "react-i18next";
-import { Button } from "../ui/button";
 import { useTranslation } from "@/i18n/client";
-import Link from "next/link";
+import { Button } from "../ui/button";
 import AppLink from "../ui/app-link/app-link";
 
 function Home() {

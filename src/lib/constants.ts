@@ -1,3 +1,8 @@
+import ClerkLogo from "@/public/clerk-logo.webp";
+import CrowdinLogo from "@/public/crowdin-logo.webp";
+import SentryLogo from "@/public/sentry-logo.webp";
+import NextjsLogo from "@/public/nextlessjs-logo.webp";
+
 const navLinks = [
   {
     id: 1,
@@ -21,4 +26,27 @@ const navLinks = [
   },
 ];
 
-export { navLinks };
+const sponsorsData = [
+  {
+    name: "Clerk",
+    link: "https://clerk.com",
+    logo: ClerkLogo,
+  },
+  {
+    name: "Crowdin",
+    link: "https://crowdin.com",
+    logo: CrowdinLogo,
+  },
+  {
+    name: "Sentry",
+    link: "https://sentry.io",
+    logo: SentryLogo,
+  },
+  {
+    name: "Nextless.js",
+    link: "https://nextjs.org",
+    logo: NextjsLogo,
+  },
+];
+
+export { navLinks, sponsorsData };

@@ -13,5 +13,6 @@
   "homeTitle": "Biznesingizni osonlik bilan qurish va kengaytirish uchun mukammal <1>SaaS shabloni</1>.",
   "homeDescription": "Next.js, TypeScript, Shadcn UI va Tailwind CSS bilan yaratilgan SaaS biznesingiz uchun bepul va ochiq manbali ochilish sahifasi shabloni.",
   "getStarted": "Boshlash",
-  "buySaaSTemplate": "Next.js SaaS Boilerplate sotib olish"
+  "buySaaSTemplate": "Next.js SaaS Boilerplate sotib olish",
+  "sponsoredBy": "Homiylik qilgan"
 }

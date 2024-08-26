@@ -1,6 +1,4 @@
-import Header from "@/components/sections/header";
-import Home from "@/components/sections/home";
-import Sponsors from "@/components/sections/sponsors";
+import { Header, Home, Sponsors, Features } from "@/components/sections";
 
 export default function HomePage() {
   return (
@@ -8,6 +6,7 @@ export default function HomePage() {
       <Header />
       <Home />
       <Sponsors />
+      <Features />
     </>
   );
 }

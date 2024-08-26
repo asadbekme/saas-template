@@ -51,6 +51,9 @@ export async function generateMetadata({
     authors: [
       { name: "Asadbek Rakhimov", url: "https://github.com/asadbekme" },
     ],
+    alternates: {
+      canonical: `https://saas-template-nextjs.vercel.app/${lng}`,
+    },
     robots: {
       index: true,
       follow: true,

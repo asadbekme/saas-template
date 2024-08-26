@@ -18,5 +18,6 @@
   "homeDescription": "A free and open-source landing page template for your SaaS business, built with Next.js, TypeScript, Shadcn UI, and Tailwind CSS.",
   "getStarted": "Get Started",
   "buySaaSTemplate": "Buy Next.js SaaS Boilerplate",
-  "sponsoredBy": "Sponsored by"
+  "sponsoredBy": "Sponsored by",
+  "featuresTitle": "Unlock the Full Potential of the SaaS Template"
 }

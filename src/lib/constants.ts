@@ -49,4 +49,25 @@ const sponsorsData = [
   },
 ];
 
-export { navLinks, sponsorsData };
+const featuresData = [
+  {
+    name: "Next.js",
+  },
+  {
+    name: "React",
+  },
+  {
+    name: "TypeScript",
+  },
+  {
+    name: "Tailwind CSS",
+  },
+  {
+    name: "Shadcn UI",
+  },
+  {
+    name: "ESLint",
+  },
+];
+
+export { navLinks, sponsorsData, featuresData };

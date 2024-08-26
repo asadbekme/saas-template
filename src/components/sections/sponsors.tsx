@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
 import { sponsorsData } from "@/lib/constants";
+import { useTranslation } from "@/i18n/client";
 
 function Sponsors() {
   const { t } = useTranslation();

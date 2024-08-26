@@ -19,11 +19,11 @@ export async function generateMetadata({
   const { default: translation } = await import(
     `@/i18n/locales/${lng}/common.json`
   );
-  const metadata = translation.metadata;
+  const metadata = translation?.metadata;
 
   return {
-    title: metadata.title,
-    description: metadata.description,
+    title: metadata?.title,
+    description: metadata?.description,
     keywords: [
       "nextjs",
       "boilerplate",
@@ -41,8 +41,8 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      title: metadata.title,
-      description: metadata.description,
+      title: metadata?.title,
+      description: metadata?.description,
       images: ["/next-js.png"],
       url: "https://saas-template-nextjs.vercel.app",
       siteName: "SaaS Template Next.js",

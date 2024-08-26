@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "SaaS shabloni - Biznesingizni osonlik bilan qurish va kengaytirish uchun mukammal SaaS shabloni.",
+    "description": "Next.js, TypeScript, Shadcn UI va Tailwind CSS bilan yaratilgan SaaS biznesingiz uchun bepul va ochiq manbali ochilish sahifasi shabloni."
+  },
   "home": "Asosiy",
   "sponsors": "Homiylar",
   "features": "Xususiyatlar",

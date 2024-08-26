@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "SaaS Template - The perfect SaaS template to build and scale your business with ease.",
+    "description": "A free and open-source landing page template for your SaaS business, built with Next.js, TypeScript, Shadcn UI, and Tailwind CSS."
+  },
   "home": "Home",
   "sponsors": "Sponsors",
   "features": "Features",

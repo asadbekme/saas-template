@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { dir } from "i18next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { languages } from "@/i18n/settings";
+import { useTranslation } from "@/i18n";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,14 +18,13 @@ export async function generateMetadata({
 }: {
   params: { lng: string };
 }): Promise<Metadata> {
-  const { default: translation } = await import(
-    `@/i18n/locales/${lng}/common.json`
-  );
-  const metadata = translation?.metadata;
+  const { t } = await useTranslation(lng);
+  const title = t("metadata.title");
+  const description = t("metadata.description");
 
   return {
-    title: metadata?.title,
-    description: metadata?.description,
+    title,
+    description,
     keywords: [
       "nextjs",
       "boilerplate",
@@ -41,9 +42,9 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      title: metadata?.title,
-      description: metadata?.description,
-      images: ["/next-js.png"],
+      title,
+      description,
+      images: ["/static/opengraph-img.png"],
       url: "https://saas-template-nextjs.vercel.app",
       siteName: "SaaS Template Next.js",
     },

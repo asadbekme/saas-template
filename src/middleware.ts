@@ -12,6 +12,12 @@ export const config = {
 };
 
 export function middleware(req: NextRequest) {
+  const { pathname } = req.nextUrl;
+
+  if (pathname.startsWith("/static")) {
+    return NextResponse.next();
+  }
+
   let lng;
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName)?.value);
@@ -20,12 +26,10 @@ export function middleware(req: NextRequest) {
 
   // Redirect if lng in path is not supported
   if (
-    !languages.some((loc) => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
-    !req.nextUrl.pathname.startsWith("/_next")
+    !languages.some((loc) => pathname.startsWith(`/${loc}`)) &&
+    !pathname.startsWith("/_next")
   ) {
-    return NextResponse.redirect(
-      new URL(`/${lng}${req.nextUrl.pathname}`, req.url)
-    );
+    return NextResponse.redirect(new URL(`/${lng}${pathname}`, req.url));
   }
 
   if (req.headers.has("referer")) {

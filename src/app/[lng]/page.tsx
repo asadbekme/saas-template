@@ -4,6 +4,7 @@ import {
   Sponsors,
   Features,
   Pricing,
+  FAQ,
 } from "@/components/sections";
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
         <Sponsors />
         <Features />
         <Pricing />
+        <FAQ />
       </main>
     </>
   );

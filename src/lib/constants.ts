@@ -154,4 +154,33 @@ const pricingPlans = [
   },
 ];
 
-export { navLinks, sponsorsData, featuresData, pricingPlans };
+const faqData = [
+  {
+    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam enim dui, id consequat turpis ullamcorper ac. Mauris id quam dolor. Nullam eu egestas turpis. Proin risus elit, sollicitudin in mi a, accumsan euismod turpis. In euismod mi sed diam tristique hendrerit.",
+  },
+  {
+    question: "How do I get started?",
+    answer: "You can start by signing up for an account.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet?",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    question: "How do I get started?",
+    answer: "You can start by signing up for an account.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam enim dui, id consequat turpis ullamcorper ac. Mauris id quam dolor. Nullam eu egestas turpis. Proin risus elit, sollicitudin in mi a, accumsan euismod turpis. In euismod mi sed diam tristique hendrerit.",
+  },
+  {
+    question: "How do I get started?",
+    answer: "You can start by signing up for an account.",
+  },
+];
+
+export { navLinks, sponsorsData, featuresData, pricingPlans, faqData };

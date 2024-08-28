@@ -19,5 +19,19 @@
   "getStarted": "Boshlash",
   "buySaaSTemplate": "Next.js SaaS Boilerplate sotib olish",
   "sponsoredBy": "Homiylik qilgan",
-  "featuresTitle": "SaaS shablonining to‘liq imkoniyatlarini oching"
+  "featuresTitle": "SaaS shablonining to‘liq imkoniyatlarini oching",
+  "pricingTitle": "Barcha hajmdagi va byudjetdagi bizneslarning SaaS shablonlari uchun narxlar",
+  "pricingDescription": "Ehtiyojlaringizga mos rejani tanlang",
+  "free": "Bepul",
+  "premium": "Premium",
+  "enterprise": "Kompaniya",
+  "month": "oy",
+  "forIndividuals": "Yakka shaxslar uchun",
+  "forSmallTeams": "Kichik jamoalar uchun",
+  "forIndustryLeaders": "Soha yetakchilari uchun",
+  "teamMembers": "Jamoa a’zolari",
+  "websites": "Veb-saytlar",
+  "storage": "Xotira",
+  "transfer": "O‘tkazish",
+  "emailSupport": "Email yordam xizmati"
 }

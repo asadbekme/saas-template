@@ -19,5 +19,19 @@
   "getStarted": "Начать",
   "buySaaSTemplate": "Купить шаблон Next.js SaaS Boilerplate",
   "sponsoredBy": "Спонсируется",
-  "featuresTitle": "Откройте полный потенциал шаблона SaaS"
+  "featuresTitle": "Откройте полный потенциал шаблона SaaS",
+  "pricingTitle": "Цены на шаблоны SaaS для предприятий всех размеров и бюджетов",
+  "pricingDescription": "Выберите подходящий план для ваших нужд",
+  "free": "Бесплатный",
+  "premium": "Премиум",
+  "enterprise": "Предприятие",
+  "month": "month",
+  "forIndividuals": "Для отдельных лиц",
+  "forSmallTeams": "Для небольших команд",
+  "forIndustryLeaders": "Для лидеров отрасли",
+  "teamMembers": "Члены команды",
+  "websites": "Сайты",
+  "storage": "Хранилище",
+  "transfer": "Передача",
+  "emailSupport": "Поддержка по электронной почте"
 }

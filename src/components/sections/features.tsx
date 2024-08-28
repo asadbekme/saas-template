@@ -1,9 +1,10 @@
 "use client";
 
+import { Box } from "lucide-react";
 import { useTranslation } from "@/i18n/client";
 import { featuresData } from "@/lib/constants";
 import { styles } from "@/lib/styles";
-import { Box } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 function Features() {
   const { t } = useTranslation();
@@ -13,8 +14,8 @@ function Features() {
       <div className="container py-16">
         <div className="mx-auto mb-12 max-w-screen-md text-center">
           <h5 className={styles.subtitle}>{t("features")}</h5>
-          <h2 className="mt-1 text-3xl font-bold">{t("featuresTitle")}</h2>
-          <p className="mt-2 text-lg text-muted-foreground">
+          <h2 className={cn("mt-1", styles.title)}>{t("featuresTitle")}</h2>
+          <p className={cn("mt-2", styles.description)}>
             {t("homeDescription")}
           </p>
         </div>

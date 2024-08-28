@@ -70,4 +70,88 @@ const featuresData = [
   },
 ];
 
-export { navLinks, sponsorsData, featuresData };
+const pricingPlans = [
+  {
+    name: "free",
+    price: 0,
+    description: "forIndividuals",
+    features: [
+      {
+        name: "teamMembers",
+        size: 2,
+      },
+      {
+        name: "websites",
+        size: 2,
+      },
+      {
+        name: "storage",
+        size: "2 GB",
+      },
+      {
+        name: "transfer",
+        size: "2 TB",
+      },
+      {
+        name: "emailSupport",
+        size: "24/7",
+      },
+    ],
+  },
+  {
+    name: "premium",
+    price: 79,
+    description: "forSmallTeams",
+    features: [
+      {
+        name: "teamMembers",
+        size: 5,
+      },
+      {
+        name: "websites",
+        size: 5,
+      },
+      {
+        name: "storage",
+        size: "5 GB",
+      },
+      {
+        name: "transfer",
+        size: "5 TB",
+      },
+      {
+        name: "emailSupport",
+        size: "24/7",
+      },
+    ],
+  },
+  {
+    name: "enterprise",
+    price: 199,
+    description: "forIndustryLeaders",
+    features: [
+      {
+        name: "teamMembers",
+        size: 100,
+      },
+      {
+        name: "websites",
+        size: 100,
+      },
+      {
+        name: "storage",
+        size: "100 GB",
+      },
+      {
+        name: "transfer",
+        size: "100 TB",
+      },
+      {
+        name: "emailSupport",
+        size: "24/7",
+      },
+    ],
+  },
+];
+
+export { navLinks, sponsorsData, featuresData, pricingPlans };

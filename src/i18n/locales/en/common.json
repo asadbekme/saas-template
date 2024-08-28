@@ -19,5 +19,19 @@
   "getStarted": "Get Started",
   "buySaaSTemplate": "Buy Next.js SaaS Boilerplate",
   "sponsoredBy": "Sponsored by",
-  "featuresTitle": "Unlock the Full Potential of the SaaS Template"
+  "featuresTitle": "Unlock the Full Potential of the SaaS Template",
+  "pricingTitle": "Pricing for SaaS templates of all sizes and budgets businesses",
+  "pricingDescription": "Choose the right plan for your needs",
+  "free": "Free",
+  "premium": "Premium",
+  "enterprise": "Enterprise",
+  "month": "month",
+  "forIndividuals": "For individuals",
+  "forSmallTeams": "For small teams",
+  "forIndustryLeaders": "For industry leaders",
+  "teamMembers": "Team Members",
+  "websites": "Websites",
+  "storage": "Storage",
+  "transfer": "Transfer",
+  "emailSupport": "Email Support"
 }

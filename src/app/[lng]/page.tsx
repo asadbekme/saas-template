@@ -5,6 +5,7 @@ import {
   Features,
   Pricing,
   FAQ,
+  Sale,
 } from "@/components/sections";
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Features />
         <Pricing />
         <FAQ />
+        <Sale />
       </main>
     </>
   );

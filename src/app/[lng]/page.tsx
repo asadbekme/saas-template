@@ -6,6 +6,7 @@ import {
   Pricing,
   FAQ,
   Sale,
+  Footer,
 } from "@/components/sections";
 
 export default function HomePage() {
@@ -20,6 +21,7 @@ export default function HomePage() {
         <FAQ />
         <Sale />
       </main>
+      <Footer />
     </>
   );
 }

@@ -86,7 +86,7 @@ function Footer() {
                 <Link
                   href="https://t.me/asadbekjs"
                   target="_blank"
-                  className="text-blue-600"
+                  className="text-purple-500"
                 >
                   Asadbek Rakhimov.
                 </Link>

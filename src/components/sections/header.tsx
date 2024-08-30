@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChartNoAxesCombined, Menu } from "lucide-react";
 import { navLinks } from "@/lib/constants";
@@ -20,16 +20,33 @@ function Header() {
   const onOpen = () => setIsOpen(true);
   const onClose = () => setIsOpen(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector("#header") as HTMLElement;
+      if (window.scrollY > 0) {
+        header.classList.add("bg-inherit", "border-b");
+      } else {
+        header.classList.remove("bg-inherit", "border-b");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header id="header">
+    <header id="header" className="sticky top-0 z-10">
       <div className="container py-5">
-        <div className={cn(styles.flex, "gap-5")}>
-          <AppLink
-            href="/"
-            className="flex items-center gap-1 md:gap-2 text-lg md:text-xl font-medium"
-          >
+        <div className={cn(styles.flex, "gap-3 sm:gap-5")}>
+          <AppLink href="/" className="flex items-center gap-1 md:gap-2">
             <ChartNoAxesCombined className="size-6 md:size-7" />
-            SaaS Template
+            <span className="text-lg md:text-xl font-medium line-clamp-1">
+              SaaS Template
+            </span>
           </AppLink>
 
           <nav className="hidden lg:block">
@@ -44,7 +61,7 @@ function Header() {
             </ul>
           </nav>
 
-          <div className={cn(styles.flex, "gap-1 md:gap-3 lg:gap-5")}>
+          <div className={cn(styles.flex, "gap-[2px] md:gap-3 lg:gap-5")}>
             <ChangeLangs />
             <ModeToggle />
             <Button

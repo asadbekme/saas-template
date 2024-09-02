@@ -36,9 +36,9 @@ function Pricing() {
               <p className="mt-2 text-sm text-muted-foreground">
                 {t(plan.description)}
               </p>
-              <AppLink href={"/login"}>
-                <Button className="mt-5 w-full">{t("getStarted")}</Button>
-              </AppLink>
+              <Button className="mt-5 w-full" asChild>
+                <AppLink href="/login">{t("getStarted")}</AppLink>
+              </Button>
               <ul className="mt-8 space-y-3">
                 {plan.features.map((feature) => (
                   <li

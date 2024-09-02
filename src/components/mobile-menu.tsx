@@ -36,10 +36,12 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             ))}
           </ul>
           <div className="flex items-center gap-5">
-            <AppLink href="/login">{t("login")}</AppLink>
-            <AppLink href="/register">
-              <Button>{t("register")}</Button>
-            </AppLink>
+            <Button variant="link" asChild>
+              <AppLink href="/login">{t("login")}</AppLink>
+            </Button>
+            <Button asChild>
+              <AppLink href="/register">{t("register")}</AppLink>
+            </Button>
           </div>
         </div>
       </SheetContent>

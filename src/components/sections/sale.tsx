@@ -18,14 +18,14 @@ function Sale() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             perspiciatis inventore praesentium!
           </p>
-          <Link
-            href="https://nextjs-boilerplate.com/pro-saas-starter-kit"
-            target="_blank"
-          >
-            <Button variant="secondary" className="mt-6">
+          <Button variant="secondary" className="mt-6" asChild>
+            <Link
+              href="https://nextjs-boilerplate.com/pro-saas-starter-kit"
+              target="_blank"
+            >
               {t("buySaaSTemplate")}
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

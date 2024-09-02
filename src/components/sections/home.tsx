@@ -14,11 +14,11 @@ function Home() {
     <section id="home">
       <div className="container py-36">
         <div className="flex flex-col items-center justify-center">
-          <Link href="https://x.com/nextjs" target="_blank">
-            <Button size="sm">
+          <Button size="sm" asChild>
+            <Link href="https://x.com/nextjs" target="_blank">
               <Twitter className="mr-1 size-5" /> {t("followNextjs")}
-            </Button>
-          </Link>
+            </Link>
+          </Button>
           <h1 className="w-full lg:w-4/5 mt-3 text-center text-5xl font-bold tracking-tight">
             <Trans i18nKey="homeTitle">
               The perfect
@@ -33,18 +33,18 @@ function Home() {
           </p>
         </div>
         <div className="mt-7 flex justify-center gap-x-5 gap-y-3 max-sm:flex-col">
-          <AppLink href="/login">
-            <Button className="w-full">{t("getStarted")}</Button>
-          </AppLink>
-          <Link
-            href="https://nextjs-boilerplate.com/pro-saas-starter-kit"
-            target="_blank"
-          >
-            <Button variant="outline" className="w-full">
+          <Button asChild>
+            <AppLink href="/login">{t("getStarted")}</AppLink>
+          </Button>
+          <Button variant="outline" asChild>
+            <Link
+              href="https://nextjs-boilerplate.com/pro-saas-starter-kit"
+              target="_blank"
+            >
               {t("buySaaSTemplate")}
               <ArrowRight className="ml-1 size-5" />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

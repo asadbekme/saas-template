@@ -49,7 +49,7 @@ export async function generateMetadata({
       siteName: "SaaS Template Next.js",
     },
     authors: [
-      { name: "Asadbek Rakhimov", url: "https://github.com/asadbekme" },
+      { name: "Asadbek Rakhimov", url: "https://www.linkedin.com/in/asadbek-rakhimov" },
     ],
     alternates: {
       canonical: `https://saas-template-nextjs.vercel.app/${lng}`,

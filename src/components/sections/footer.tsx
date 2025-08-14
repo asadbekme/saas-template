@@ -15,6 +15,7 @@ import { navLinks } from "@/lib/constants";
 import { styles } from "@/lib/styles";
 import { useTranslation } from "@/i18n/client";
 import { Trans } from "react-i18next";
+import { useMemo } from "react";
 
 function Footer() {
   const { t } = useTranslation();
@@ -30,7 +31,7 @@ function Footer() {
     },
     {
       icon: <Linkedin />,
-      link: "https://www.linkedin.com/in/asadbek-raximov-8b370a276",
+      link: "https://www.linkedin.com/in/asadbek-rakhimov",
     },
     {
       icon: <Mail />,
@@ -49,6 +50,8 @@ function Footer() {
       link: "https://facebook.com",
     },
   ];
+
+  const currentYear = useMemo(() => new Date().getFullYear(), []);
 
   return (
     <footer id="footer">
@@ -81,16 +84,13 @@ function Footer() {
 
           <div className="mt-6 w-full border-t pt-5">
             <p className="text-sm text-muted-foreground">
-              <Trans i18nKey="footerText">
-                © Copyright 2024 SaaS Template. Developed by
-                <Link
+              <Trans i18nKey="footerText" values={{ year: currentYear }} components={{
+                1: <Link
                   href="https://t.me/asadbekjs"
                   target="_blank"
                   className="text-purple-500"
-                >
-                  Asadbek Rakhimov.
-                </Link>
-              </Trans>
+                />
+              }} />
             </p>
           </div>
         </div>

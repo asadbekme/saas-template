@@ -36,5 +36,5 @@
   "emailSupport": "Поддержка по электронной почте",
   "faqFullForm": "Часто задаваемые вопросы",
   "saleTitle": "Вы готовы?",
-  "footerText": "Copyright © 2024 SaaS Template. Разработано <1>Asadbek Rakhimov</1>"
+  "footerText": "Copyright © {{year}} SaaS Template. Разработано <1>Асадбек Рахимов</1>"
 }
